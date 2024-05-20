@@ -2,13 +2,13 @@
 import jsVectorMap from "jsvectormap";
 import "jsvectormap/dist/css/jsvectormap.css";
 import React, { useEffect } from "react";
-import "../../js/us-aea-en";
+import "../../js/world-merc";
 
 const MapOne: React.FC = () => {
   useEffect(() => {
     const mapOne = new jsVectorMap({
       selector: "#mapOne",
-      map: "us_aea_en",
+      map: "world_merc",
       zoomButtons: true,
 
       regionStyle: {

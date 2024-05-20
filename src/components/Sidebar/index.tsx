@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import SidebarLinkGroup from "./SidebarLinkGroup";
+import { TvIcon } from "@heroicons/react/24/outline";
 
 interface SidebarProps {
   sidebarOpen: boolean;
@@ -68,13 +69,19 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
       {/* <!-- SIDEBAR HEADER --> */}
       <div className="flex items-center justify-between gap-2 px-6 py-5.5 lg:py-6.5">
         <Link href="/">
-          <Image
+          <TvIcon
+            width={216}
+            height={48}
+            className="h-[32px] w-[176px] text-white lg:h-[48px] lg:w-[216px]"
+          />
+
+          {/* <Image
             width={176}
             height={32}
-            src={"/images/logo/logo.svg"}
+            src={"/images/logo/logo.jpg"}
             alt="Logo"
             priority
-          />
+          /> */}
         </Link>
 
         <button

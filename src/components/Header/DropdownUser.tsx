@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { UserCircleIcon } from "@heroicons/react/24/outline";
 
 const DropdownUser = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -44,13 +45,14 @@ const DropdownUser = () => {
       >
         <span className="hidden text-right lg:block">
           <span className="block text-sm font-medium text-black dark:text-white">
-            Thomas Anree
+            Амарбадам
           </span>
-          <span className="block text-xs">UX Designer</span>
+          <span className="block text-xs"> Тусламж үйлчилгээний ажилтан</span>
         </span>
 
         <span className="h-12 w-12 rounded-full">
-          <Image
+          <UserCircleIcon className="h-10 w-10" />
+          {/* <Image
             width={112}
             height={112}
             src={"/images/user/user-01.png"}
@@ -59,7 +61,7 @@ const DropdownUser = () => {
               height: "auto",
             }}
             alt="User"
-          />
+          /> */}
         </span>
 
         <svg
